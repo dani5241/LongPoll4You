@@ -1,5 +1,5 @@
 __version__ = '0.0.5'
-__author__ = 'RedNY [LP]'
+__author__ = 'danya kraevskii'
 
 DEFAULT_DATABASE = {
   "tokens": [],
@@ -38,7 +38,7 @@ LOG_TO_PATH = False
 
 CALLBACK_LINK = "https://irisduty.ru/callback/"
 
-GITHUB_LINK = "https://github.com/lordralinc/idm_lp"
+GITHUB_LINK = "https://github.com/dani5241/redny_lpv4"
 VERSION_REST = "https://raw.githubusercontent.com/lordralinc/idmmulti_lp-rest/master/version.json"
 ALIASES_REST = "https://raw.githubusercontent.com/lordralinc/idmmulti_lp-rest/master/aliases.json"
 ROLE_PLAY_COMMANDS_REST = "https://raw.githubusercontent.com/lordralinc/idmmulti_lp-rest/master/role_play_commands.json"
