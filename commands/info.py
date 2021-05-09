@@ -20,13 +20,13 @@ async def info_wrapper(message: Message, **kwargs):
     version_rest = requests.get(const.VERSION_REST).json()
 
     if version_rest['version'] != const.__version__:
-        update_text = f"\n\n⚠ Доступно обновление {version_rest['version']}\n" \
+        update_text = f"\n\n⚠ Доступно обновление епта , но не верьте, он пиздит! {version_rest['version']}\n" \
                       f"{version_rest['description']}\n"
     else:
         update_text = ""
 
     text = f"""
-    ❤ IDM LP v{__version__} by {__author__}
+    ❤ redNY [LP] v{__version__} by {__author__}
 
     ▶ Ключ рукаптчи: {"&#9989;" if db.ru_captcha_key else "&#10060;"}
     ▶ Удаление уведомлений: {"&#9989;" if db.delete_all_notify else "&#10060;"}
