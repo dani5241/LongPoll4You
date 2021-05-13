@@ -49,7 +49,11 @@ async def info_wrapper(message: Message, **kwargs):
     ▶ Сервисные префиксы: {' '.join(db.service_prefixes)}
     ▶ Свои префиксы: {' '.join(db.self_prefixes) if db.self_prefixes else ''}
     ▶ Префиксы дежурного: {' '.join(db.duty_prefixes) if db.duty_prefixes else ''}{update_text}
-    """.replace('    ', '')
+       Моя голова винтом
+       Когда я перед собой вижу тебя наяву
+       сердце моё полно веществом
+       Я говорю нет, а оно – люблю
+  """.replace('    ', '')
     await edit_message(
         message,
         text
