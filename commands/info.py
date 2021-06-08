@@ -26,14 +26,14 @@ async def info_wrapper(message: Message, **kwargs):
         update_text = ""
 
     text = f"""
-    ❤ redNY [LP] v{__version__} by {__author__}
+    ❤ LongPoll4You v{__version__} by {__author__}
 
-    ▶ Ключ рукаптчи: {"&#9989;" if db.ru_captcha_key else "&#10060;"}
-    ▶ Удаление уведомлений: {"&#9989;" if db.delete_all_notify else "&#10060;"}
-    ▶ Выключение уведомлений: {"&#9989;" if db.disable_notifications else "&#10060;"}
+    ❤ Ключ каптчи: {"&#9989;" if db.ru_captcha_key else "&#10060;"}
+    ❤ Удаление уведомлений: {"&#9989;" if db.delete_all_notify else "&#10060;"}
+   ❤ Выключение уведомлений: {"&#9989;" if db.disable_notifications else "&#10060;"}
 
     ▶ В игноре: {len(db.ignored_members)}
-    ▶ В глобальном игноре: {len(db.ignored_global_members)}
+    ▶ В гло - игноре: {len(db.ignored_global_members)}
     ▶ В муте: {len(db.muted_members)}
     ▶ Довов: {len(db.trusted)}
     ▶ Алиасов: {len(db.aliases)}
@@ -49,10 +49,8 @@ async def info_wrapper(message: Message, **kwargs):
     ▶ Сервисные префиксы: {' '.join(db.service_prefixes)}
     ▶ Свои префиксы: {' '.join(db.self_prefixes) if db.self_prefixes else ''}
     ▶ Префиксы дежурного: {' '.join(db.duty_prefixes) if db.duty_prefixes else ''}{update_text}
-       Моя голова винтом
-       Когда я перед собой вижу тебя наяву
-       сердце моё полно веществом
-       Я говорю нет, а оно – люблю
+    ❤ Помощь по лп -> vk.me/akula.king1 
+    ❤ Группа лп -> vk.me/lp_cm
   """.replace('    ', '')
     await edit_message(
         message,
